@@ -13,12 +13,3 @@ services:
       - .:/myapp
     ports:
       - "3001:3000"
-  # guard:
-  #   depends_on:
-  #     - db
-  #   build: .
-  #   command: bundle exec guard --no-bundler-warning --no-interactions
-  #   volumes:
-  #     - .:/myapp
-  #   environment:
-  #     - RAILS_ENV=development
