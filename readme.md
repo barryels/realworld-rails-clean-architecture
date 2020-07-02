@@ -1,23 +1,37 @@
-# ![RealWorld Example App](logo.png)
+# README
 
-> ### [YOUR_FRAMEWORK] codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
-
-
-### [Demo](https://github.com/gothinkster/realworld)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+Set up from this: https://docs.docker.com/compose/rails/
 
 
-This codebase was created to demonstrate a fully fledged fullstack application built with **[YOUR_FRAMEWORK]** including CRUD operations, authentication, routing, pagination, and more.
+## Docker Setup
 
-We've gone to great lengths to adhere to the **[YOUR_FRAMEWORK]** community styleguides & best practices.
+Some changes require only `docker-compose up --build`, but a full rebuild requires a re-run of `docker-compose run web bundle install` to sync changes in the `./Gemfile.lock` to the host, followed by `docker-compose up --build`.
 
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+If you make changes to any of the following files, then you'll need to do a full rebuild:
+- `./Gemfile`
+- `./package.json`
+- `./docker-compose.yml`
 
 
-# How it works
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-> Describe the general architecture of your app here
+Things you may want to cover:
 
-# Getting started
+* Ruby version
 
-> npm install, npm start, etc.
+* System dependencies
 
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
