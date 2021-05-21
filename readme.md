@@ -7,6 +7,8 @@ Set up from this: https://docs.docker.com/compose/rails/
 
 Some changes require only `docker-compose up --build`, but a full rebuild requires a re-run of `docker-compose run web bundle install` to sync changes in the `./Gemfile.lock` to the host, followed by `docker-compose up --build`.
 
+The web app will be running at: `http://www.lvh.me:3001/`
+
 If you make changes to any of the following files, then you'll need to do a full rebuild:
 - `./Gemfile`
 - `./package.json`
