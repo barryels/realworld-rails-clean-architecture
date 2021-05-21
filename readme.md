@@ -12,7 +12,6 @@ If you make changes to any of the following files, then you'll need to do a full
 - `./package.json`
 - `./docker-compose.yml`
 
-
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -29,6 +28,7 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
+`APIURL=http://localhost:3001/api ./resources/api/run-api-tests.sh`
 
 * Services (job queues, cache servers, search engines, etc.)
 

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  get 'about_us' => 'pages#about_us', as: :about_us
+  get 'api/articles' => 'articles#index'
+  get 'articles' => 'articles#index'
+
+  get 'api/articles/:id' => 'articles#show'
+  get 'articles/:id' => 'articles#show'
 end
